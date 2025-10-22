@@ -37,10 +37,8 @@ defmodule TppSimWeb.Layouts do
     ~H"""
     <header></header>
 
-    <main>
-      <div>
-        {render_slot(@inner_block)}
-      </div>
+    <main class="h-screen w-screen">
+      {render_slot(@inner_block)}
     </main>
 
     <.flash_group flash={@flash} />

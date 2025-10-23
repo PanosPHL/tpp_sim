@@ -2,6 +2,7 @@ defmodule TppSimWeb.PageController do
   use TppSimWeb, :controller
 
   def home(conn, _params) do
-    render(conn, :home)
+    TppSim.Games.Game.Supervisor.start_link([])
+    render(conn, :home, form: %{})
   end
 end

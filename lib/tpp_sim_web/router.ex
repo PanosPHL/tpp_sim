@@ -17,9 +17,10 @@ defmodule TppSimWeb.Router do
   scope "/", TppSimWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
-    get "/games/join", GameController, :join
-    resources "/games", GameController
+    live "/", Home, :home
+    live "/games/join", JoinGame, :join
+    live "/games", ViewGame, :view
+    live "/games/:id", ViewGame, :view
   end
 
   # Other scopes may use custom stacks.

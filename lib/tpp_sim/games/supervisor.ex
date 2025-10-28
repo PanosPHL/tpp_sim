@@ -1,4 +1,5 @@
 defmodule TppSim.Games.Game.Supervisor do
+  use DynamicSupervisor
   alias TppSim.Games.Game, as: Game
   alias TppSim.Games.Game.Server, as: GameServer
 
@@ -21,12 +22,10 @@ defmodule TppSim.Games.Game.Supervisor do
 
     start_supervisor(spec)
 
-    game_id
+    {:ok, game_id}
   end
 
   def start_supervisor(spec) do
-    case DynamicSupervisor.start_child(__MODULE__, spec) do
-      args -> dbg(args)
-    end
+    DynamicSupervisor.start_child(__MODULE__, spec)
   end
 end

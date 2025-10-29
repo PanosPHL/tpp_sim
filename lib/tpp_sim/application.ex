@@ -12,6 +12,7 @@ defmodule TppSim.Application do
       {DNSCluster, query: Application.get_env(:tpp_sim, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: TppSim.PubSub},
       TppSim.Games.Game.Supervisor,
+      {Registry, keys: :unique, name: GameRegistry},
       # Start a worker by calling: TppSim.Worker.start_link(arg)
       # {TppSim.Worker, arg},
       # Start to serve requests, typically the last entry

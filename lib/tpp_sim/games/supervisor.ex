@@ -12,17 +12,20 @@ defmodule TppSim.Games.Game.Supervisor do
   end
 
   def create_game() do
-    game_id = Game.generate_code()
+    case Game.generate_code() do
+      game_id ->
+        generate_supervisor_spec(game_id)
+        |> start_supervisor()
+        |> (fn {:ok, pid} -> {:ok, pid, game_id} end).()
+    end
+  end
 
-    spec = %{
+  defp generate_supervisor_spec(game_id) do
+    %{
       id: game_id,
-      start: {GameServer, :start_link, [[]]},
+      start: {GameServer, :start_link, [game_id]},
       restart: :permanent
     }
-
-    start_supervisor(spec)
-
-    {:ok, game_id}
   end
 
   def start_supervisor(spec) do

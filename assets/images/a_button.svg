@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com"
+  width="500px" height="500px">
+  <defs />
+  <ellipse style="fill: rgb(216, 216, 216); stroke: rgb(156, 156, 156);" cx="250" cy="250"
+    rx="142.281" ry="142.281" />
+  <text
+    style="fill: rgb(156, 156, 156); font-family: Arial, sans-serif; font-size: 136.4px; stroke-linejoin: bevel; white-space: pre;"
+    x="204.493" y="297.235">A</text>
+</svg>

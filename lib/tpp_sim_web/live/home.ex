@@ -13,7 +13,7 @@ defmodule TppSimWeb.Home do
 
   def handle_event("create_game", _unsigned_params, socket) do
     case GameSupervisor.create_game() do
-      {:ok, game_id} ->
+      {:ok, _pid, game_id} ->
         socket =
           socket
           |> put_flash(:info, "Game created successfully")

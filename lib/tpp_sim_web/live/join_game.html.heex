@@ -1,9 +1,16 @@
 <Layouts.app flash={@flash}>
   <div class="h-full w-full p-12 grid grid-cols-12 grid-rows-8">
     <div class="flex-col row-start-6 col-start-8 col-span-4">
-      <.input label="Player Name" name="player_name" type="text" value={nil} />
-      <.input label="Game Id" name="game_id" type="text" value={@game_id} />
-      <.button>Join Game</.button>
+      <.form for={@form} id="join_game_form" phx-submit="join">
+        <.input label="Player Name" name="player_name" type="text" value={nil} />
+        <.input
+          field={@form[:game_id]}
+          label="Game Id"
+          type="text"
+          value={@game_id}
+        />
+        <.button>Join Game</.button>
+      </.form>
     </div>
   </div>
 </Layouts.app>

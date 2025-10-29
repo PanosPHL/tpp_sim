@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com"
+  width="500px" height="500px">
+  <defs />
+  <rect x="168.203" width="163.594" height="240.207"
+    style="fill: rgb(216, 216, 216); stroke: rgb(156, 156, 156);" rx="13.249" ry="13.249" />
+  <rect x="168.203" width="163.594" height="240.207"
+    style="fill: rgb(216, 216, 216); stroke-width: 1; stroke: rgb(156, 156, 156);" rx="13.249"
+    ry="13.249" y="259.793" />
+  <rect x="168.203" width="163.594" height="240.207"
+    style="fill: rgb(216, 216, 216); stroke-width: 1; transform-box: fill-box; transform-origin: 50% 50%; stroke: rgb(156, 156, 156);"
+    rx="13.249" ry="13.249" y="129.896" transform="matrix(0, -1, 1, 0, -129.896515, 0.000504)" />
+  <rect x="168.203" width="163.594" height="240.207"
+    style="fill: rgb(216, 216, 216); stroke-width: 1; transform-origin: 250px 249.999px; stroke: rgb(156, 156, 156);"
+    rx="13.249" ry="13.249" y="129.896" transform="matrix(0, -1, 1, 0, 129.895996, 0.001007)" />
+  <ellipse style="fill: rgb(216, 216, 216); stroke: rgba(0, 0, 0, 0.082);" cx="250" cy="250"
+    rx="116.457" ry="117.799" />
+  <path
+    d="M 242.886 25.728 Q 250.001 14.271 257.115 25.728 L 297.61 90.948 Q 304.724 102.405 290.496 102.405 L 209.505 102.405 Q 195.277 102.405 202.391 90.948 Z"
+    style="paint-order: fill; stroke: rgb(155, 155, 155); fill: rgb(156, 156, 156);" />
+  <path
+    d="M 350.028 113.143 Q 357.143 101.686 364.257 113.143 L 404.752 178.363 Q 411.866 189.82 397.638 189.82 L 316.647 189.82 Q 302.419 189.82 309.533 178.363 Z"
+    style="paint-order: fill; stroke: rgb(155, 155, 155); fill: rgb(156, 156, 156); stroke-width: 1; transform-box: fill-box; transform-origin: 50% 50%;"
+    transform="matrix(0, 1, -1, 0, 81.65472, 101.382378)" />
+  <path
+    d="M 350.029 113.147 Q 357.144 101.69 364.258 113.147 L 404.753 178.367 Q 411.867 189.824 397.639 189.824 L 316.648 189.824 Q 302.42 189.824 309.534 178.367 Z"
+    style="paint-order: fill; stroke: rgb(155, 155, 155); fill: rgb(156, 156, 156); stroke-width: 1; transform-origin: 357.145px 148.625px;"
+    transform="matrix(0, 1, 1, 0, -295.938469, 101.375488)" />
+  <path
+    d="M 242.314 -474.273 Q 249.429 -485.73 256.543 -474.273 L 297.038 -409.053 Q 304.152 -397.596 289.924 -397.596 L 208.933 -397.596 Q 194.705 -397.596 201.819 -409.053 Z"
+    style="paint-order: fill; stroke: rgb(155, 155, 155); fill: rgb(156, 156, 156); stroke-width: 1; transform-origin: 249.427px -438.798px;"
+    transform="matrix(1, 0, 0, -1, 0, 877.595032)" />
+</svg>

@@ -1,6 +1,33 @@
 <Layouts.app flash={@flash}>
-  <div class="h-full w-full p-12 grid grid-cols-12 grid-rows-8">
-    <div class="flex flex-col gap-y-3 items-center row-start-6 col-start-8 col-span-4">
+  <div class="h-1/2 w-1/2"></div>
+  <div class="h-1/2 w-1/2 flex flex-col gap-y-6 justify-center">
+    <h1 class="font-bold text-3xl">Welcome to Think Plays Simulator!</h1>
+    <p class="text-xl leading-8">
+      Think Plays Simulator is an experience heavily inspired by the "Twitch Plays Pokemon" phenomenom of the 2010s.
+      Create your own game room and have players join, or jump into an existing game. The choice is yours! Enjoy all of then
+      fun, frustration, and triumph of real-time collaborative gaming. Good luck!
+    </p>
+    <ul class="flex flex-col gap-y-3">
+      <li>
+        <div class="flex flex-col">
+          <span>Private Matchmaking</span>
+          <span>Create custom games for you and your friends</span>
+        </div>
+      </li>
+      <li>
+        <div class="flex flex-col">
+          <span>Collaborate with friends</span>
+          <span>Fight towards a common goal whilst tripping over each other's toes</span>
+        </div>
+      </li>
+      <li>
+        <div class="flex flex-col">
+          <span>Live Updates</span>
+          <span>See every action as it happens in real-time</span>
+        </div>
+      </li>
+    </ul>
+    <div class="flex flex-col gap-y-3 justify-stretch">
       <.form for={@form} phx-submit="create_game">
         <.button variant="primary">Create Game</.button>
       </.form>

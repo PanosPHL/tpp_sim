@@ -35,12 +35,17 @@ defmodule TppSimWeb.Layouts do
 
   def app(assigns) do
     ~H"""
-    <header></header>
+    <div class="h-screen w-screen flex flex-col">
+      <header></header>
 
-    <main class="h-screen w-screen">
-      {render_slot(@inner_block)}
-    </main>
+      <main class="p-12 grow flex justify-between items-center">
+        {render_slot(@inner_block)}
+      </main>
 
+      <footer class="bg-secondary-content w-full h-24 px-8 flex items-center sticky">
+        <p>© 2025 Think Company. All rights reserved.</p>
+      </footer>
+    </div>
     <.flash_group flash={@flash} />
     """
   end

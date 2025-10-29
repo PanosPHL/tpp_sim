@@ -21,6 +21,7 @@ defmodule TppSimWeb.Router do
     live "/games/join", JoinGame, :join
     live "/games", ViewGame, :view
     live "/games/:id", ViewGame, :view
+    live "/games/play/:id", PlayGame, :play
   end
 
   # Other scopes may use custom stacks.

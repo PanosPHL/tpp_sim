@@ -1,4 +1,5 @@
 defmodule TppSimWeb.PlayGame do
+  alias TppSim.Games.Game.Server, as: GameServer
   alias TppSimWeb.Components.Gamepad, as: Gamepad
   use TppSimWeb, :live_view
 
@@ -15,7 +16,13 @@ defmodule TppSimWeb.PlayGame do
   end
 
   def handle_event("a_press", _params, socket) do
-    # push_action_to_server(game_id: socket.assigns.game_id, action: "a", user: socket.assigns.user)
+    GameServer.add_action(socket.assigns.game_id, "A")
+
+    {:noreply, socket}
+  end
+
+  def handle_event("b_press", _params, socket) do
+    GameServer.add_action(socket.assigns.game_id, "B")
 
     {:noreply, socket}
   end
